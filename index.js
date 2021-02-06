@@ -3,9 +3,14 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = [{
+  type: "input",
+  name: "name",
+  message: "What is your name?"
+},
+  {
     
     type: "input",
-    name: "projecttitle",
+    name: "title",
     message: "What is your project titled?"
   },
   {
@@ -36,10 +41,25 @@ const questions = [{
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, err => {
+    if (err) {
+      return console.log(err);
+    }
+  
+    console.log("Your README.md file has been generated")
+});
+}
+
+inquirer.prompt(questions).then((answers) => {
+  console.log(JSON.stringify(answers, null, '  '));
+  wirte
+});
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  runInquirer();
+}
 
 // Function call to initialize app
 init();
