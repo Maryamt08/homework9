@@ -31,13 +31,18 @@ const questions = [{
   {
     type: "input",
     name: "contributions",
-    message: "Are there any contribution rules?"
+    message: "Are there any other contributors to this project?"
   },
   {
     type: "input",
     name: "test",
     message: "Please provide test instructions if applicable"
   },
+  {
+    type: "input",
+    message: "Any additional information about the project?",
+    name: "projectInfo",
+},
 ];
 
 // TODO: Create a function to write README file
@@ -60,6 +65,3 @@ inquirer.prompt(questions).then((answers) => {
 function init() {
   runInquirer();
 }
-
-// Function call to initialize app
-init();
