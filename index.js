@@ -58,7 +58,7 @@ function writeToFile(fileName, data) {
 
 inquirer.prompt(questions).then((answers) => {
   console.log(JSON.stringify(answers, null, '  '));
-  wirte
+  writeToFile
 });
 
 // TODO: Create a function to initialize app
