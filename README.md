@@ -7,6 +7,6 @@ This is a command-line application that runs with Node.js that generates a READM
 ![image](https://user-images.githubusercontent.com/73563078/108572945-6d2ff680-72e1-11eb-8456-e49c041f22b8.png)
 
 
-Walk through video:
+video:
 
-https://drive.google.com/file/d/1FTLtvlfujnyztUChBLx5wpxvaxYETkvz/view
+https://drive.google.com/file/d/1FTLtvlfujnyztUChBLx5wpxvaxYETkvz/view?usp=sharing
